@@ -2,6 +2,15 @@
 
 flights-repo is a repositary containing all relevant files to run the main.c
 
+## What does it do ?
+main.c is a program that takes in specific data about airlines, passenger count, destination and origin.
+It requires the use of command line to receive the file name that it should be opening.
+Upon succesfully opening the file, the program will prompt the user to type in an airline.
+Airline input should be in the two-letter abbreviation.
+The program will then count all the flights that airline had,
+and the passengers it flew over those flights.
+This information will then be outputted to the user.
+
 ## Installation
 
 Place all files in the same directory, use terminal to navigate inside the directory.
