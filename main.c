@@ -54,6 +54,7 @@ int main(int argc, char *argv[])
             //printf("%u\r\n", passengercount);
         }
     }
+    printf("airline: %s\r\n", airlinecode);
     printf("flights: %d\r\n", count);
     printf("passengers: %u\r\n", passengercount);
     free(flights);
