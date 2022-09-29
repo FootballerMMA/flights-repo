@@ -18,7 +18,7 @@ Once inside the directory use gcc to compile the program.
 It is required to use command line to open the .csv file, however all that is required
 from the use is to type in the name of the .csv file.
 
-## Example of running program
+### Example of running program
 ```bash
 ./a.out passenger-data-short.csv
 ```
