@@ -8,9 +8,8 @@
 int main(int argc, char *argv[])
 {
     unsigned int passengercount = 0;
-    //printf("%s\r\n", argv[1]);
     FILE *fp = NULL;
-    if (argc < 2){ // change this to 3
+    if (argc < 2){
         printf("ERROR NO ARGS\n");
         return (-1);
     }
@@ -32,26 +31,18 @@ int main(int argc, char *argv[])
         sp = strtok(NULL, ",");
         strcpy(flights[i].airline, sp);
         sp = strtok(NULL, ",");
-        //printf("String Value : %s\r\n",sp);
         flights[i].passengers = atoi(sp);
-        //printf("Int value : %u\r\n", flights[i].passengers);
-        
-        
-        //printf("%u\r\n",flights[i].passengers);
         i++;
     }
     i = 0;
     char airlinecode[3];
-    //printf("%s\r\n", flights[i].airline);
     printf("airline: ");
     scanf("%s", airlinecode);
     int count = 0;
     for (i = 0; i < NUM_FLIGHTS; i++){
         if (strcmp(flights[i].airline,airlinecode) == 0){
             count++;
-            //printf("Adding %u and %u\r\n", passengercount, flights[i].passengers);
             passengercount = passengercount + flights[i].passengers;
-            //printf("%u\r\n", passengercount);
         }
     }
     printf("airline: %s\r\n", airlinecode);
