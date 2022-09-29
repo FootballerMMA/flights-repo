@@ -3,11 +3,11 @@
 
 #define NUM_FLIGHTS 200
 
-struct Flight {
+typedef struct FLIGHT {
     char origin[4];
     char destination[4];
     char airline[3];
     unsigned int passengers;
-};
+} Flight;
 
 #endif // FLIGHTS_H_

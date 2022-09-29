@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         printf("ERROR FILE NOT OPEN\n");
         return (-1);
     }
-    struct Flight* flights = malloc(NUM_FLIGHTS * sizeof(*flights));
+    Flight* flights = malloc(NUM_FLIGHTS * sizeof(*flights));
     
     char buffer[BUFFER_SIZE];
     char *sp;
